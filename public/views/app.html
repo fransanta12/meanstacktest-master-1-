@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <title>Sessions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="../js/controllers/controller.js"></script>
+   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body ng-controller="AppCtrl" ng-init="listarCurso()">
+<header>
+    <ul class="cabecera coll-md-12"><h1 class="tex_header">MEAN Stack Test</h1>
+    </ul>
+  </header>
+  <div class="container-fluid">
+<!--    <ul class="divider"></ul><br/><br/><br/>-->
+  <div class='conte_logout'>
+  <span>{{user.fname}} {{user.lname}} ({{user.login}})</span>
+  <a ng-href="{{logout}}" ng-click="logout()">logout</a>
+   </div>
+  </div>
+  <ul class="divider"></ul>
+   <br/><br/><br/>
+<!--
+   <div class="datos_Principal col-md-2 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-6 col-xs-offset-4 panel panel-default">
+   
+  </div>
+-->
+  
+  <div class="panel1 panel panel-default centered col-md-4 col-md-offset-3"  ng-repeat="curso in cursos">
+  <div class="panel-body" ng-click="details(curso._id)">
+    <b>{{curso.code}}</b> {{curso.name}} <span class="details">details</span>
+  </div>
+    <div id="{{curso._id}}" class="panel-footer" style="display:none">courseDescription {{curso.description}} <a class="detailsbnt" href="../content/app.html" target="popup" onClick="window.open(this.href, this.target, 'width=450,height=520'); return false;" >launch</a></div>
+</div>
+ 
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script  type="text/javascript" src="./js/controllers/controller.js"></script>
+</body>
+</html>

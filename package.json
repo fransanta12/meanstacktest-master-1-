@@ -1,0 +1,11 @@
+{
+  "name": "meanStackTest",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-session": "^2.0.0-alpha.1",
+    "express": "^4.13.4",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.14"
+  }
+}

@@ -1,0 +1,91 @@
+body{
+  background-color: rgb(242,242,242);
+}
+.cabecera{
+  background-color:  rgb(0,0,0);
+  color: rgb(244,248,253);
+  text-align: right;
+  padding-top: 0.3%;
+  padding-bottom: 1%;
+}
+.tex_header{
+  margin-right: 1.5%;
+}
+.cabecera span{
+  float: right;
+}
+.conteDatos{
+  margin-top: 8%;
+  background-color: white;
+  padding: 3%;
+  outline: 0px solid black;
+  color: #A1A4A6;
+  min-width: 450px;
+  /*min-height: 200px;*/
+}
+input{
+  width: 300px;
+  height: 18px;
+}
+.btn-login{
+  float: right;
+  width: 90px;
+  margin-top: 2%;
+  color:rgb(188,189,191);
+  border-bottom-color: rgb(188,189,191);
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+.conte_logout{
+  float: right;
+  color: rgb(188,189,191);
+}
+.conte_logout .logout span{
+}
+.conte_logout a{
+  text-decoration:none;
+  color: rgb(188,189,191);
+}
+/*.datos_Principal{
+  background-color: rgb(255,255,255);
+  width: 25%;
+  height: 40px;
+}*/
+.panel1{
+  background-color: rgb(242,242,242);
+  border: none;
+  color: rgb(188,189,191);
+}
+.panel-body{
+  width: 600px;
+  height: 40px;
+  background-color: rgb(255,255,255);
+  border: 1px solid;
+}
+.panel-footer{  
+  margin-left: 75px;
+  width: 525px;
+  height: auto;
+  background-color: rgb(255,255,255);
+  border: 1px solid;
+  padding-bottom: 4%;
+  padding-right: -3%;
+  text-align: right;
+}
+.details{
+  float: right;
+}
+.detailsbnt{
+  text-decoration:none;
+  color: rgb(188,189,191);
+  float: right;
+}
+
+@media only screen and (max-width: 726px) {
+  .btn-login{
+    margin-left: 1%;
+  }
+  .conte_logout{
+    /*margin-top: 8%;*/
+}
+}
